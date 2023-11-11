@@ -389,23 +389,87 @@ i {
 }
 
 form {
-  background-color: rgba(0, 0, 0, 0.2666666667);
+  background-color: #FFF;
   max-width: 500px;
   height: 350px;
-  padding: 40px;
+  padding: 30px;
   border-radius: 20px;
 }
 
 form h2 {
   text-align: center;
   font-size: 30px;
+  color: #06121e;
 }
 
 form p {
   text-align: center;
   margin: 20px 0;
+  color: #06121e;
 }
 
+.input-single {
+  position: relative;
+  margin: 20px 0;
+}
+
+.input-single label {
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  transition: all 0.5s;
+  cursor: text;
+}
+
+.input {
+  width: 100%;
+  border: 0;
+  border-bottom: 0.5px solid #353436;
+  padding: 5px;
+  font-size: 17px;
+  outline: 0;
+}
+
+form .input-single .input:focus ~ label,
+form .input-single .input:valid ~ label {
+  transform: translateY(-24px);
+  font-size: 12px;
+  color: #06121e;
+}
+
+.btn {
+  width: 100%;
+  text-align: center;
+}
+
+form input[type=submit] {
+  padding: 10px 18px;
+  color: #FFF;
+  background-color: #d94140;
+  border: 0;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  margin: 14px 0;
+}
+
+@media screen and (max-width: 768px) {
+  form {
+    max-width: 300px;
+    height: 250px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  form h2 {
+    font-size: 20px;
+  }
+  form p {
+    margin: 10px 0;
+  }
+  .input-single {
+    margin: 10px 0;
+  }
+}
 body {
   font-family: Sora, sans-serif;
   width: 100%;
