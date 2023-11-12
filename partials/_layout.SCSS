@@ -1,7 +1,7 @@
 .container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 8px;
 }
 
 // BG HOME
@@ -94,8 +94,8 @@
   }
 }
 
+// ******************************
 // ABOUT
-
 .about {
   background-color: $primary-normal;
   overflow: hidden;
@@ -145,6 +145,7 @@
   }
 }
 
+//******************************
 // SERVICES
 .services{
   background-color: $white-normal;
@@ -228,6 +229,7 @@
   }
 }
 
+// ******************************
 // FOOTER
 .footer{
   display: flex;
@@ -272,6 +274,7 @@
   }
 }
 
+// ******************************
 // BOTÃO WHATSAPP
 .btn-whatsapp {
   position: fixed;
